@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!--
+        6/23 bug fix
+        java.lang.IllegalStateException: Only fullscreen opaque activities can request orientation
+
+        안드로이드 8.0 버전에서만 발생하는 오류로 투명스타일 작성시 오류발생함
+        <item name="android:windowIsTranslucent">true</item>
+    -->
+    <style name="Theme.AppCompat.Translucent" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DefaultText">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextTitle" parent="DefaultText">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubTitle" parent="DefaultText">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextWhiteTitle" parent="DefaultText">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBtnDisable" parent="DefaultText">
+        <item name="android:textColor">@color/colorBtnTxtDisable</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="TextNormal" parent="DefaultText">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="TextBtnNormal" parent="DefaultText">
+        <item name="android:textColor">@color/colorBtnTxtNormal</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="TextWhiteBtn" parent="DefaultText">
+        <item name="android:textColor">@color/colorBtnNormal</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextLargeTitle" parent="DefaultText">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">34dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextMiddleTitle" parent="DefaultText">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBody" parent="DefaultText">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="TextWhiteBody" parent="DefaultText">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="TextBoldBody" parent="DefaultText">
+        <item name="android:textColor">@color/colorTitle</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextGrayBody" parent="DefaultText">
+        <item name="android:textColor">@color/colorBtnTxtDisable</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="TextHyperlink" parent="DefaultText">
+        <item name="android:textColor">@color/colorTxtHyperLink</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="TextDescription" parent="DefaultText">
+        <item name="android:textColor">@color/colorTxtHyperLink</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+</resources>

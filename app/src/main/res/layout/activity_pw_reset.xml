@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.payment.PaymentPwResetActivity"
+    android:paddingStart="@dimen/common_margin"
+    android:paddingEnd="@dimen/common_margin"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/topLargeTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        style="@style/TextMiddleTitle"
+        android:text="@string/payment_pw_reset_title"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/topLargeTitleView"
+        android:layout_marginTop="50dp"
+        android:paddingStart="16dp"
+        android:hint="@string/payment_pw_reset_hint_id"
+        style="@style/TextBody"
+        android:gravity="start|center_vertical"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/common_round_box_bg_disable"/>
+
+    <TextView
+        android:id="@+id/tv_reset_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_marginTop="8dp"
+        style="@style/TextHyperlink"
+        android:text=""/>
+
+    <LinearLayout
+        android:id="@+id/ll_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reset_message"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp">
+
+            <EditText
+                android:id="@+id/edt_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:hint="@string/payment_pw_reset_hint_request"
+                style="@style/TextBody"
+                android:gravity="start|center_vertical"
+                android:inputType="number"
+                android:maxLength="4"
+                android:background="@drawable/common_round_box_bg"/>
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorRed"
+                android:textSize="14dp"
+                android:text="10:00"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_request_again"
+            android:layout_width="130dp"
+            android:layout_height="44dp"
+            android:background="@drawable/white_btn_bg_with_boder"
+            android:textColor="@color/colorBtnNormal"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="@string/payment_pw_reset_btn_request_again"
+            android:onClick="onBtnClick"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_common_btn"
+        android:textColor="@color/colorBtnTxtDisable"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="@string/next"
+        android:enabled="false"
+        android:onClick="onBtnClick"/>
+
+</RelativeLayout>

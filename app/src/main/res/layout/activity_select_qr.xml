@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/common_margin"
+    android:paddingRight="@dimen/common_margin"
+    android:background="@color/colorWhite"
+    tools:context=".ui.activity.payment.PaymentPwSetActivity">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/btn_pop_close"
+        android:onClick="onClose"/>
+
+    <TextView
+        android:id="@+id/topLargeTitleView"
+        style="@style/TextMiddleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="@string/select_qr_process" />
+
+    <TextView
+        android:id="@+id/topSubTitleView"
+        style="@style/TextBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLargeTitleView"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/btn_stack"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="387dp"
+        android:background="@drawable/selector_common_btn"
+        android:enabled="false"
+        android:onClick="onBtnClick"
+        android:text="@string/stack"
+        android:textColor="@color/colorBtnTxtDisable"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btn_export"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="265dp"
+        android:background="@drawable/selector_common_btn"
+        android:enabled="false"
+        android:onClick="onBtnClick"
+        android:text="@string/export"
+        android:textColor="@color/colorBtnTxtDisable"
+        android:textSize="15dp" />
+
+</RelativeLayout>

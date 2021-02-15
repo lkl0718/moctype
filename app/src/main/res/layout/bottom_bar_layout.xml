@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/nav1Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onNavigationClick">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nav01View"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_nav_01_n"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav2Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onNavigationClick">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nav02View"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_nav_02_n"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav3Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onNavigationClick">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nav03View"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_nav_03_ac"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav4Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onNavigationClick">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nav04View"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_nav_04_n"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav5Layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onNavigationClick">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nav05View"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_nav_05_n"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

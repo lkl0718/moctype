@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorRed">#F30000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTitle">#000000</color>
+    <color name="colorLine">#e1e1e1</color>
+    <color name="colorBtnDisable">#d9d9d9</color>
+    <color name="colorBtnTxtDisable">#999999</color>
+    <color name="colorBtnNormal">#4490e9</color>
+    <color name="colorBtnTxtNormal">@color/colorWhite</color>
+    <color name="colorTxtHyperLink">#666666</color>
+    <color name="colorBoxSelectedBorder">@color/colorBtnNormal</color>
+    <color name="colorBoxNormalBorder">@color/colorBtnDisable</color>
+    <color name="colorOpacityBlack">#66000000</color>
+    <color name="colorDeviderLine">#eeeeee</color>
+    <color name="colorBlack">#000000</color>
+</resources>
+

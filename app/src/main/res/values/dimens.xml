@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_margin">20dp</dimen>
+    <dimen name="common_nav_bar_heigth">72dp</dimen>
+    <dimen name="common_btn_height">54dp</dimen>
+
+    <dimen name="image_thumbnail_size">119dp</dimen>
+    <dimen name="image_thumbnail_spacing">3px</dimen>
+    <dimen name="image_detail_pager_margin">10dp</dimen>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.popup.AlarmDialog"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:paddingTop="20dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextTitle"
+            android:text="@string/alarm_popup_title"/>
+
+        <TextView
+            android:id="@+id/descView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleView"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            style="@style/TextBody"
+            android:text="@string/alarm_popup_message"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/descView"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_btn_bg_with_boder"
+                android:textColor="@color/colorBtnNormal"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="@string/disagree"/>
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/selector_common_btn"
+                android:textColor="@drawable/selector_common_btn_text"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="@string/ok"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

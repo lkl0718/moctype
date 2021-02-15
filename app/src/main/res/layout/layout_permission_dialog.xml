@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:padding="24dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextTitle"
+            android:text="@string/permission_title"/>
+
+        <TextView
+            android:id="@+id/descView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleView"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            style="@style/TextBody"
+            android:text="@string/permission_message"/>
+
+        <ImageView
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/descView"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorLine"/>
+
+        <TextView
+            android:id="@+id/permissionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineView"
+            android:layout_marginTop="20dp"
+            style="@style/TextBoldBody"
+            android:text="@string/permission_sub_title"/>
+
+        <LinearLayout
+            android:id="@+id/permissionLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permissionView"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_camera"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    style="@style/TextSubTitle"
+                    android:gravity="center_vertical"
+                    android:text="@string/permission_1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    style="@style/TextDescription"
+                    android:text="@string/permission_1_sub"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/permissionLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permissionLayout1"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_gallery"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    style="@style/TextSubTitle"
+                    android:gravity="center_vertical"
+                    android:text="@string/permission_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    style="@style/TextDescription"
+                    android:text="@string/permission_2_sub"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/permissionLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permissionLayout2"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_fitness"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    style="@style/TextSubTitle"
+                    android:gravity="center_vertical"
+                    android:text="@string/permission_3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    style="@style/TextDescription"
+                    android:text="@string/permission_3_sub"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_stack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_btn_height"
+            android:layout_below="@+id/permissionLayout3"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_common_btn"
+            android:textColor="@drawable/selector_common_btn_text"
+            android:textSize="15dp"
+            android:text="@string/ok"/>
+    </RelativeLayout>
+</RelativeLayout>

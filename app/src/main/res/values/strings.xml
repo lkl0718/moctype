@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- key -->
+    <string name="default_notification_channel_id">com.md.moktype</string>
+    <string name="user_agent">48EA1FDDD1CDEF152E36AE8188580F613D3090655BB7DC0B8E5DD2D3A4A30C234CDF14CEC34CEE7D25475F038128FE1A99625D88DC6C909E0F9BF4F2289FC346</string>
+
+    <!-- common -->
+    <string name="app_name">목형적치대</string>
+    <string name="ok">확인</string>
+    <string name="finish">종료</string>
+    <string name="cancel">취소</string>
+    <string name="retry">재시도</string>
+    <string name="update">업데이트</string>
+    <string name="next_time">다음에</string>
+    <string name="next">다음</string>
+    <string name="agree">동의</string>
+    <string name="disagree">거부</string>
+    <string name="app_finish">앱 종료</string>
+    <string name="now_setting">지금 설정</string>
+    <string name="now_download">Downloading file..</string>
+    <string name="stack">적치</string>
+    <string name="export">반출</string>
+
+    <!-- error -->
+    <string name="err_server_connection">서버접속이 원활하지 않습니다.</string>
+    <string name="err_payment_pw_is_different">입력한 결제 비밀번호가 다릅니다.</string>
+    <string name="err_network_title">네트워크가 연결되지 않았어요.</string>
+    <string name="err_network_message">Wi-Fi를 연결하거나, 데이터 네트워크 설정을\n\'접속허용\'으로 변경하신 후 이용해주세요.</string>
+
+    <!-- popup -->
+    <string name="alert_update_title">행가래 업데이트가 필요해요.</string>
+    <string name="alert_update_contents">최신버전으로 업데이트 해주세요.</string>
+    <string name="alert_push_agree_time">%s\n알림 서비스를 받도록 설정했습니다.</string>
+    <string name="alert_push_disagree_time">%s\n알림 서비스를 받지 않도록 설정했습니다.</string>
+    <string name="alarm_popup_title">알림서비스</string>
+    <string name="alarm_popup_message">SV 포인트 적립, SV 리워드 지급, 챌린지 초대 등 서비스의 원활한 사용을 위한 알림을 받아보시겠습니까?</string>
+    <string name="my_qr_title">내 QR코드</string>
+    <string name="nf_sign_title">알고 계셨나요?</string>
+    <string name="nf_sign_message">휴대폰 NFC로도 적립/사용되며, NFC\n인식 시 행가래 앱이 실행중이어야 합니다.</string>
+    <string name="nf_sign_warn">(갤럭시 S7 이상, Android 6.0 이상만\n사용 가능합니다.)</string>
+    <string name="qr_scan_title">QR scan</string>
+    <string name="qr_scan_warn">해당 영역에 QR 코드를 인식해주세요.</string>
+    <string name="permission_title">App 접근 권한 안내</string>
+    <string name="permission_message">행가래 App 사용을 위해 아래와 같은 권한이 필요하니, 허용해 주시기 바랍니다.</string>
+    <string name="permission_sub_title">필수 접근 권한</string>
+    <string name="permission_1">카메라</string>
+    <string name="permission_1_sub">QR코드, 활동 인증 사진 촬영</string>
+    <string name="permission_2">사진/미디어/파일</string>
+    <string name="permission_2_sub">활동 인증 사진 업로드</string>
+    <string name="permission_3">피트니스</string>
+    <string name="permission_3_sub">걸음 수에 따른 건강걷기 포인트 적립</string>
+
+    <!-- Payment Password-->
+    <string name="payment_pw_input_title">결제 비밀번호를 입력해 주세요.</string>
+    <string name="payment_pw_input_message">SV 리워드 결제/송금 시에 사용됩니다.</string>
+    <string name="payment_pw_input_warn">결제 비밀번호가 기억나지 않는다면?</string>
+    <string name="payment_pw_input_reset"><u>결제 비밀번호를 잊으셨나요?</u></string>
+    <string name="payment_pw_set_title">결제 비밀번호를 지정해 주세요.</string>
+    <string name="payment_pw_set_title2">결제 비밀번호를 다시 입력해 주세요.</string>
+    <string name="payment_pw_set_message">SV 리워드 결제/송금 시에 사용됩니다.</string>
+    <string name="payment_pw_change_title">결제 비밀번호 변경</string>
+    <string name="payment_pw_change_message">현재 비밀번호를 입력해 주세요.</string>
+    <string name="payment_pw_change_reset"><u>결제 비밀번호를 잊으셨나요?</u></string>
+    <string name="payment_pw_change_has_not_pw">현재 설정된 비밀번호가 없습니다.\n설정페이지로 이동합니다.</string>
+    <string name="payment_pw_reset_title">결제 비밀번호 재설정</string>
+    <string name="payment_pw_reset_message1">입력하신 회사 메일로 인증코드가 전송됩니다.</string>
+    <string name="payment_pw_reset_message2">인증코드가 전송되었습니다.</string>
+    <string name="payment_pw_reset_err_request_email">인증코드 발송이 실패하였습니다.\n다시 시도해 주세요.</string>
+    <string name="payment_pw_reset_err_auth_email">인증에 실패하였습니다.\n다시 시도해 주세요.</string>
+    <string name="payment_pw_reset_hint_id">회사 이메일 / 전화번호</string>
+    <string name="payment_pw_reset_hint_request">인증코드 입력</string>
+    <string name="payment_pw_reset_btn_request">인증코드 전송</string>
+    <string name="payment_pw_reset_btn_request_again">인증코드 재전송</string>
+    <string name="payment_pw_reset_time">%02d:%02d</string>
+    <string name="payment_pw_reset_time_over">유효시간이 만료되었습니다. 다시 인증절차를 진행하세요.</string>
+
+    <!-- Alarm -->
+    <string name="alarm_title">알림설정</string>
+    <string name="alarm_all_push">전체 Push 알림</string>
+    <string name="alarm_major_notice">주요 공지사항 알림</string>
+    <string name="alarm_invice_challenge">챌린지 초대</string>
+    <string name="alarm_qna">문의/제안 답변</string>
+    <string name="alarm_event">이벤트</string>
+    <string name="alarm_quick_poll">Quick Poll 및 Quiz</string>
+
+    <!-- Version -->
+    <string name="version_title">App 버전</string>
+    <string name="version_message">앱이 최신 버전 입니다.</string>
+    <string name="version_message1">업데이트가 필요합니다.</string>
+    <string name="version_now_new">현재버전 %s\n최신버전 %s</string>
+    <string name="version_now_new1"><![CDATA[현재버전 %s<br><font color=\'#4490E9\'>최신버전 %s</font>]]></string>
+
+    <string name="select_qr_process">목형적치대 기능 선택</string>
+
+    <string-array name="IMAGE_SELECT">
+        <item>"사진 촬영"</item>
+        <item>"갤러리"</item>
+    </string-array>
+
+</resources>

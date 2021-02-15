@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.qr.QRScanActivity">
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_scanner_layout="@layout/custom_barcode_scanner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- top -->
+            <RelativeLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:background="@color/colorOpacityBlack"
+                app:layout_constraintBottom_toTopOf="@id/centerLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/TextWhiteTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/qr_scan_title" />
+
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_close_wt"
+                    android:onClick="clickCloseBtn" />
+            </RelativeLayout>
+
+            <!-- scan area -->
+            <RelativeLayout
+                android:id="@+id/centerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topLayout">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_corner_01" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/img_corner_02" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/img_corner_03" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/img_corner_04" />
+
+            </RelativeLayout>
+
+            <!-- left -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorOpacityBlack"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/centerLayout"
+                app:layout_constraintBottom_toBottomOf="@id/centerLayout"
+                app:layout_constraintEnd_toStartOf="@id/centerLayout"/>
+
+            <!-- right -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorOpacityBlack"
+                app:layout_constraintStart_toEndOf="@id/centerLayout"
+                app:layout_constraintTop_toTopOf="@id/centerLayout"
+                app:layout_constraintBottom_toBottomOf="@id/centerLayout"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- bottom -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorOpacityBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/centerLayout">
+
+                <TextView
+                    style="@style/TextWhiteBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/qr_scan_warn" />
+
+                <Button
+                    style="@style/TextWhiteBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_btn_height"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/white_btn_bg"
+                    android:text="@string/retry" />
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+</RelativeLayout>
